@@ -1,0 +1,165 @@
+\documentclass[preprint2]{aastex62}
+
+% CUSTOM PACKAGES AND COMMANDS
+% ==============================
+\include{definitions}
+
+
+
+
+
+% PAPER PREAMBLE
+% ===================
+\received{July 1, 2016}
+\revised{September 27, 2016}
+\accepted{\today}
+\submitjournal{ApJ}
+%\AuthorCollaborationLimit=3
+%% Use \allauthors at the manuscript end to show the full author list.
+%% This command should only be used when \AuthorCollaborationLimit is used.
+
+\shorttitle{Spin of M87*}
+\shortauthors{Nemmen}
+%\watermark{DRAFT} % adds a light gray and diagonal water-mark to the first page. If the text is long you can control the water-mark size with: \setwatermarkfontsize{dimension}
+
+
+
+
+
+
+% BEGINNING OF MANUSCRIPT / PAPER CONTENT
+% ==========================================
+\begin{document}
+
+\title{The spin of M87*}
+
+
+
+\correspondingauthor{Rodrigo Nemmen}
+\email{rodrigo.nemmen@iag.usp.br}
+
+\author{Rodrigo Nemmen}
+\affil{Universidade de S\~ao Paulo, Instituto de Astronomia, Geof\'{\i}sica e Ci\^encias Atmosf\'ericas, Departamento de Astronomia, S\~ao Paulo, SP 05508-090, Brazil}
+
+\begin{comment}
+\author{Rodrigo Nemmen}
+\affil{Universidade de S\~ao Paulo, Instituto de Astronomia, Geof\'{\i}sica e Ci\^encias Atmosf\'ericas, Departamento de Astronomia, S\~ao Paulo, SP 05508-090, Brazil}
+\collaboration{(Fermi LAT Collaboration)}
+%\nocollaboration
+\end{comment}
+
+
+
+
+\begin{abstract}
+By using a combination of observations at different energies: EHT (mass), X-rays, MW (jet power), radio polarization (mdot), we constrain the BH spin of the supermassive black hole at the center of M87, M87*. 
+We find that the lower limit on the spin is given by the MAD with beta=1.5. In this case, we find $a/M>0.4$ in the prograde case, and $a/M<-0.5$ in the retrograde case. 
+We set limits on the magnetic flux, potentially ruling out some SANE models.
+\end{abstract}
+
+\keywords{keywords}
+
+
+
+
+
+\section{Introduction} \label{sec:intro}
+
+
+
+
+
+\section{Observations} \label{sec:obs}
+
+Mass accretion rate by \cite{Kuo2014}
+
+Jet power from Cavity power \cite{Russell2013}
+
+?density profile by \cite{Russell2018}?
+
+
+\section{Models}
+
+ADIOS \cite{Blandford1999}
+need this to connect the Mdot measured by the Faraday rotation with the  BH accretion rate
+we keep beta free, allowing for different levels of mass-loss
+
+MAD and SANE models \cite{Narayan2003, Sasha2011, Narayan2012}
+describe model
+where I take the spin part from? \cite{Sasha2012a}
+magnetic flux part
+\begin{equation}
+\eta = \left( \frac{\phi}{15} \right)^2 % +spin +h/r
+\end{equation}
+
+\missingfigure{model efficiency vs a/M, MAD and SANE}
+
+
+\section{Results} 
+
+\missingfigure{empirical jet efficiency for M87* vs beta}
+
+\missingfigure{spin MAD (prograde and retrograde) vs beta, taking into account uncertainties on jet power}
+
+\missingfigure{spin vs magnetic flux vs beta (prograde and retrograde), showing some points of particular realizations of MAD and SANE models}
+
+
+
+
+\section{Discussion} \label{sec:disc}
+
+how does this impact the shadow?
+connect with Psaltis work
+asymmetry on the shadow?
+
+does this rule out any models for consideration, based on the jet energetics?
+yes, some magnetic fluxes and spins are ruled out
+
+not all density profiles are allowed in the retrograde case
+
+future constraints with polarimetry
+
+
+
+
+\section{Summary}	\label{sec:summary}
+
+\begin{enumerate}
+\item By using a combination of observations at different energies: EHT (mass), X-rays, MW (jet power), radio polarization (mdot), we constrain the BH spin of the supermassive black hole at the center of M87, M87*. 
+\item We find that the lower limit on the spin is given by the MAD with beta=1.5. In this case, we find $a/M>0.4$ in the prograde case, and $a/M<-0.5$ in the retrograde case. 
+\item We set limits on the magnetic flux, potentially ruling out some SANE models. WHAT LIMITS?
+\item density profiles ruled out...
+\end{enumerate}
+
+
+
+
+
+
+\acknowledgments
+
+We acknowledge useful discussions with Roderik Overzier. This work was supported by FAPESP (Funda\c{c}\~ao de Amparo \`a Pesquisa do Estado de S\~ao Paulo) under grant 2017/01461-2. The Black Hole Group has received a generous donation of a GPU from NVIDIA under the GPU Grant Program.
+
+\vspace{5mm}
+\facilities{Fermi LAT}
+\software{astropy \citep{astropy}, \href{http://pandas.pydata.org/index.html}{Pandas}, Jupyter \citep{ipython}.} % specifies which programs were used
+
+
+
+\appendix
+
+\section{Appendix information}
+
+
+
+% REFERENCES
+% ============
+\bibliography{refs}
+
+%\allauthors % shows entire author+affilation list. Has to go at the end of the manuscript
+
+%% Include this line if you are using the \added, \replaced, \deleted
+%% commands to see a summary list of all changes at the end of the article.
+%\listofchanges
+
+\end{document}
