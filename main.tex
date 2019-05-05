@@ -69,7 +69,9 @@ The shadow cast by the event horizon of a black hole (BH) has been imaged for th
 
 However, the second parameter of the Kerr metric--the dimensionless spin $a_* \equiv Jc/GM^2$ where $J$ is the angular momentum of the black hole--is much harder to constrain with shadow observations. The reason is that the ring diameter has a very weak dependence on $a_*$ or the disk inclination, varying by only 4\% in the range $a_*=0$ to $\approx 1$ \citep{Takahashi2004,Johannsen2010}. Measuring the ring properties with precision enough to set useful constraints on the spin may require VLBI at shorter wavelengths, more telescopes or space-based interferometry \eg{EHTC2019, Roelofs2019}.
 
-In this Letter, we set bounds on the allowed BH spins of M87* by modeling the energetics of its relativistic jet as being powered by the Blandford-Znajek process--the extraction of BH spin energy through electromagnetic torques. We assume a distance to M87* of 16.8 Mpc \eg{Blakeslee2009, EHTC2019e}. At this distance, cosmological effects are negligible. 
+Besides mass and spin, black hole accretion is also described by two other parameters: the mass accretion rate onto the BH $\dot{M}$ and the magnetic flux $\Phi$ crossing one hemisphere of the event horizon. In this Letter, we set bounds on the allowed values of $a_*$ and $\Phi$ of M87* by modeling the energetics of its relativistic jet as being powered by the Blandford-Znajek process--the extraction of BH spin energy through electromagnetic torques. The observational input to our estimates are the measurements of $M$, $\dot{M}$ and the power carried by the jet. We assume a distance to M87* of 16.8 Mpc \eg{Blakeslee2009, EHTC2019e}. At this distance, cosmological effects are negligible. 
+% FURTHERMORE, IT IS RELEVANT TO ALSO CONSTRAIN ANOTHER PARAMETER OF INTEREST, THE MAGNETIC FLUX WHICH IS IMPORTANT FOR JET PRODUCTION
+
 
 
 
@@ -130,21 +132,36 @@ Our first result is a model-independent estimate of the jet production efficienc
 
 Since we have a full mapping of the jet efficiency to the spin and magnetic flux $\eta=\eta(a_*, \phi)$, we can use the observational range of values of $\eta$ displayed in Figure \ref{obs-eta} to constrain the physical parameters of the event horizon beyond its mass--assuming that the Kerr metric is the correct description of the spacetime. 
 
-Figure \ref{spins} shows the inferred spin of M87* on the assumption that the SMBH is in the MAD state--i.e. with the maximum value of $\phi$. The lesson behind this figure is that if M87* is in the MAD state then the only allowed spins are $a_* \leq -0.5$ or $a_* \geq 0.4$ (within the $1\sigma$ uncertainty bands). We limit the upper value of $a_*$ to one because the BH solution is not valid anymore above this limit. Furthermore, if the BH is retrograde then values of $\beta \geq 0.9$ are favored otherwise M87* would not be able to power its jet through the Blandford-Znajek process. All values of $\beta$ are allowed if the BH is prograde.
+Figure \ref{spins} shows the inferred spin of M87* on the assumption that the SMBH is in the MAD state--i.e. with the maximum value of $\phi$. The lessons behind this figure are the following: (i) If M87* is in the MAD state then the only allowed spins are $a_* \leq -0.5$ or $a_* \gtrsim 0.4$ (within the $1\sigma$ uncertainty bands). (ii) If the density profile of the accretion flow follows $\rho \propto r^{-1.5}$ as in RIAF models without mass-loss \eg{Narayan1994}, then $a_* = 0.45^{+0.12}_{-0.08}$ (prograde) or $a_* = -0.62^{+0.14}_{-0.30}$ (retrograde). (iii) If the BH is retrograde then values of $\beta \geq 0.9$ are favored otherwise M87* would not be able to power its jet through the Blandford-Znajek process; all values of $\beta$ are allowed if the BH is prograde.
+Notice that we limit the upper value of $|a_*|$ to one because the BH solution is not valid anymore above this limit.
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=\linewidth]{figures/spins-MAD.pdf}
-\caption{spin MAD (prograde and retrograde) vs beta, taking into account uncertainties on jet power }
+\caption{The spin of the SMBH in M87* as a function of $\beta$ for both the prograde and retrograde cases,
+assuming that it is in the MAD state. The shaded region corresponds to the $1\sigma$ uncertainty band around the mean. The uncertainty was propagated from the uncertainty in the observed jet powers. }
 \label{spins}
 \end{figure}
 
 
 Our second result is a mapping of the observed efficiencies to the physical parameters of the SMBH, namely the spin and magnetic flux. 
 
+\begin{figure*}
+    \centering
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/phi-beta-spins-prograde.pdf} % first figure itself
+    \end{minipage}\hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/phi-beta-spins-retrograde.pdf} % second figure itself
+    \end{minipage}
+\caption{spin vs magnetic flux vs beta (prograde and retrograde), showing some points of particular realizations of MAD and SANE models}
+\label{spins}
+\end{figure*}
 
-\missingfigure{spin vs magnetic flux vs beta (prograde and retrograde), showing some points of particular realizations of MAD and SANE models}
 
+spin vs magnetic flux vs beta (prograde and retrograde), showing some points of particular realizations of MAD and SANE models
 
 
 
@@ -161,6 +178,9 @@ not all density profiles are allowed in the retrograde case
 
 future constraints with polarimetry
 
+Compare with constraints of EHTC paper 5
+
+compare with previous constraints. other papers...
 
 
 
@@ -173,7 +193,7 @@ future constraints with polarimetry
 \item density profiles ruled out...
 \end{enumerate}
 
-
+We hope that these constraints on the BH spin and magnetic flux will be useful in further extracting physical parameters from M87*'s BH shadow.
 
 
 
