@@ -103,3 +103,11 @@
 % red underline
 \def\redul#1{{\color{red} \underline{\color{black}#1}}}
 
+% new todo environment: todoi = todo-inline
+\def\todoi#1{\hl{\textbf{[#1]}}}
+
+% for replies to comments
+\def\reply#1{{\sethlcolor{cyan}\hl{\textbf{[#1]}}}}
+
+% red strikethrough
+\def\rst#1{{\color{red} \st{#1}}}
