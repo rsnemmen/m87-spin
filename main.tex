@@ -47,7 +47,7 @@
 
 
 \begin{abstract}
-Now that the mass of the central black hole in the galaxy M87 has been measured with great precision using different methods, the remaining parameter of the Kerr metric that needs to be estimated is the spin $a_*$. We have modeled measurements of the \textbf{average} power of the relativistic jet and \textbf{an upper limit} to the mass accretion rate onto the black hole with general relativistic magnetohydrodynamic models of jet formation. This allows us to derive constraints on $a_*$ and the black hole magnetic flux $\phi$. We find a lower limit on M87*'s spin and magnetic flux of $|a_*| \geq 0.4$ and $\phi \gtrsim 6$ in the prograde case, and $|a_*| \geq 0.5$ and $\phi \gtrsim 10$ in the retrograde case, otherwise the black hole is not able to provide enough energy to power the observed jet. These results indicate that M87* has a moderate spin at minimum and disfavour a variety of models typified by low values of $\phi$ known as ``SANE'', indicating that M87* prefers the magnetically arrested disk state. \textbf{We also consider different estimates of the jet power and $\dot{M}$ and their impact on the derived $a_*$ and $\phi$.}
+Now that the mass of the central black hole in the galaxy M87 has been measured with great precision using different methods, the remaining parameter of the Kerr metric that needs to be estimated is the spin $a_*$. We have modeled measurements of the \textbf{average} power of the relativistic jet and \textbf{an upper limit} to the mass accretion rate onto the black hole with general relativistic magnetohydrodynamic models of jet formation. This allows us to derive constraints on $a_*$ and the black hole magnetic flux $\phi$. We find a lower limit on M87*'s spin and magnetic flux of $|a_*| \geq 0.4$ and $\phi \gtrsim 6$ in the prograde case, and $|a_*| \geq 0.5$ and $\phi \gtrsim 10$ in the retrograde case, otherwise the black hole is not able to provide enough energy to power the observed jet. These results indicate that M87* has a moderate spin at minimum and disfavour a variety of models typified by low values of $\phi$ known as ``SANE'', indicating that M87* prefers the magnetically arrested disk state. \textbf{We discuss how different estimates of the jet power and accretion rate can impact $a_*$ and $\phi$.}
 \end{abstract}
 
 \keywords{accretion, accretion disks -- black hole physics -- galaxies: active -- galaxies: individual (M87) -- galaxies: jets }
@@ -172,6 +172,9 @@ Our results are fundamentally based on the modeling of $\eta_{\rm observed}$--th
 %, except those with $\phi \approx 8$ and $a_*<0$.
 \textbf{Reassuringly, the MAD models with $a_*=-0.94$ and $\phi=8.04$ which were rejected by EHTC5 because they fail to produce stable images are also rejected in our work. Further constraints on $a_*$ and $\phi$ can be obtained by using the image scoring in EHTC5 as a prior to the modeling performed here. This deserves further investigation in the future. }
 
+% comparisons with other spin estimates
+\textbf{The spin bounds from this work encompass--but are less restrictive--than previous estimates in the literature based on semi-analytic spectral fits \citep{Feng2017}, TeV pair production \citep{Li2009} and jet wobbling \citep{Sobyanin2018}. }
+
 % why the difference between efficiencies in our work and paper V?
 It is interesting to discuss one notable difference between our results and those of EHTC5. The SANE models with $\phi \approx 1$ and $a_*=-0.94$ simulated by EHTC5 are characterized by low jet efficiencies $\eta = 5 \times 10^{-3}$, therefore they do not agree with $\eta_{\rm observed} > 0.08$ of this work. However, they produce jet powers in the range $P \sim 10^{42}-10^{43} \ {\rm erg \ s}^{-1}$ and pass the ``jet power consistency test'' of EHTC5. What is the origin of this apparent contradiction between the simulated large $P$ and low $\eta$ for these models? 
 % mdot here < 6.17e-6 mdot_Edd
@@ -190,14 +193,10 @@ Nonetheless, since M87's jet has a low viewing angle \eg{Walker2018} it is not i
 % referee: If the actual jet power lies outside the narrow range quoted in Russell+, what would happen to the constraint on spin and flux?
 \textbf{What would happen if the current value of $P$ is different than the measurement that we have adopted due to e.g. variability? If $P$ is on the lower end of the estimates at $10^{42} \ {\rm erg \ s}^{-1}$ \eg{Prieto2016} then the lower limits on $a_*$ and $\phi$ are somewhat alleviated: $|a_*| > 0.2$, $\phi > 2$ in the prograde case and $|a_*| > 0.3$, $\phi > 4$ in the retrograde one. On the other hand, if the actual $P$ lies on the high end of the estimates at $10^{45} \ {\rm erg \ s}^{-1}$ \eg{Degasperin2012} then the BH is unable to provide enough power to the jet via the Blandford-Znajek process given the $\dot{M}$ measured by \cite{Kuo2014}. The maximum jet power that can be extracted from M87* fed at this $\dot{M}$ is $6 \times 10^{43} \ {\rm erg \ s}^{-1}$, similarly to the most powerful jets in the EHTC5 models. If $P$ is established to be as high as $10^{45} \ {\rm erg \ s}^{-1}$, then either the $\dot{M}$ measurement of Kuo et al. is innacurate or there is a different mechanism (not Blandford-Znajek) powering the jet.}
 
-% comparisons with other work
-• discuss other spin estimates 
-• discuss the EHTC5 comment on the MAD retrograde being ruled out
-
 % Caveats
 % %%%%%%%%%
 % • eta function
-One assumption of our work is that the dependency of $\eta$ on the BH parameters is adequately described by \textbf{the time-average of} global ideal GRMHD simulations of relativistic jet formation. These models have achieved an impressive level of sophistication in the last few years and the results of different GRMHD codes broadly agree with each other \eg{Porth2019}. However, simulations which incorporate departures from the MHD approximation are suggesting that jet formation can be more complex than previously thought \citep{Parfrey2019}. Furthermore, we have only considered the case of a BH spin vector aligned with the angular momentum vector of the accretion flow. \todoi{there is little evidence for tilted disks? EHTC5} The general case of arbitrary relative orientations of these vectors can lead to more complicated jet behaviors \citep{Liska2018}. These issues deserve further investigations. 
+One assumption of our work is that the dependency of $\eta$ on the BH parameters is adequately described by \textbf{the time-average of} global ideal GRMHD simulations of relativistic jet formation. These models have achieved an impressive level of sophistication in the last few years and the results of different GRMHD codes broadly agree with each other \eg{Porth2019}. However, simulations which incorporate kinetic effects are suggesting that jet formation can be more complex than previously thought, \textbf{with a significant population of  particles with negative energies measured by a far observer which could lead to strong extraction of the BH spin energy via the Penrose process \citep{Parfrey2019}. This could alter expectations for the radiation spectrum from BH accretion}. Furthermore, we have only considered the case of a BH spin vector parallel to the angular momentum vector of the accretion flow. The general case of arbitrary relative orientations of these vectors can lead to more complicated jet behaviors \citep{Liska2018}. These issues deserve further investigations. 
 
 % how does this impact the shadow?
 Finally, as we already mentioned the BH shadow is weakly affected by the different values of $a_*$ and it is not clear whether further EHT observations will eventually be able to constrain the ring properties with enough sharpness to meaningfully constrain the spin. We are looking forward to advancements in VLBI techniques that will allow better measurements of the ring properties and  
@@ -213,11 +212,11 @@ Our main conclusions can be summarized as follows:
 
 (i) The black hole in M87* is converting at least $\eta=10\%$ of the accreted rest mass energy to jet power, and up to $200\%$ depending on how shallow the density profile of the accretion flow is.
 
-(ii) We derive a robust lower limit on M87*'s spin: $|a_*| \geq 0.4$ in the prograde case or $|a_*| \geq 0.5$ in the retrograde case. We are not able to distinguish between the prograde or retrograde scenarios based only on the data we have used.
+(ii) We derive a lower limit on M87*'s spin: $|a_*| \geq 0.4$ in the prograde case or $|a_*| \geq 0.5$ in the retrograde case. We are not able to distinguish between the prograde or retrograde scenarios based only on the data we have used.
 
 (iii) We obtained lower limits on the BH magnetic flux, potentially ruling out a variety of models with low values of $\phi$ known as ``SANE''. We find that $\phi \gtrsim 5$ in the prograde case and $\phi \gtrsim 10$ in the retrograde case. Therefore, the magnetically arrested disk state seems to be preferred by M87*.
 
-\textbf{A possibility that cannot currently be excluded is that the RM could be jet-dominated, given the low inclination angle to the relativistic jet. In this case, the accretion rate could potentially be much larger than we considered. This would be consistent with low spins ($|a_*| \geq 0.1$) and SANE accretion ($\phi \gtrsim 1$). }
+\textbf{A possibility that cannot currently be excluded is that the RM could be jet-dominated, given the low inclination angle to the relativistic jet. In this case, the accretion rate could potentially be much larger than we considered. This would be consistent with low spins ($|a_*| \geq 0.1$) or SANE accretion ($\phi \gtrsim 1$). }
 
 We hope that these constraints on the M87*'s black hole spin and magnetic flux will be useful in further extracting physical parameters from M87*'s BH shadow. 
 
