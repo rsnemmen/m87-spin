@@ -4,16 +4,32 @@
 \usepackage{color, soul}	% Highlighting, use \hl{...}
 \usepackage{wrapfig}	% wrap text around figures; https://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions
 \usepackage{verbatim}	% comment out chunks of text
-\usepackage[normalem]{ulem} % fancy underlining, strikethrough spanning pages. \sout strikethrough, \xout, \underline
+\usepackage[normalem]{ulem} % fancy underlining, strikethrough spanning pages. \sout strikethrough, \xout, \uline
+%\usepackage{tabularx} % to be able to create fpanel with various figures
+%\usepackage[flushleft]{threeparttable} % to manage tables 
 
 
-
-% Aliases and new definitions
-% =============================
+% Custom shortcuts
+% ==================
 
 \newcommand{\vdag}{(v)^\dagger}
+
 \newcommand\aastex{AAS\TeX}
+
 \newcommand\latex{La\TeX}
+
+\newcommand{\fermi}{\emph{Fermi}}
+
+\newcommand{\nemmen}{{\bf NEMMEN, R. S.}}
+
+\newcommand{\lat}{\emph{Fermi} LAT Collaboration}
+
+\newcommand{\sgra}{Sgr A$^*$}
+
+
+
+% Custom commands
+% ================
 
 % Symbol: Approximately proportional to (http://tex.stackexchange.com/questions/33538/how-to-get-an-approximately-proportional-to-symbol)
 \def\apropto{%
@@ -27,12 +43,6 @@
       \mbox{$\underset{\s}{\p}$}%
     }}%
 }
-
-\newcommand{\fermi}{\emph{Fermi}}
-
-\newcommand{\nemmen}{{\bf NEMMEN, R. S.}}
-
-\newcommand{\lat}{\emph{Fermi} LAT Collaboration}
 
 \newcommand{\continue}{\todo[inline,color=RedOrange]{
 \centerline{ \textbf{\Large CONTINUE} }   
@@ -60,6 +70,24 @@
 \end{wrapfigure}
 }
 
+% figshare
+\newcommand{\figshare}{fig\textbf{share}}
+
+% cross (wrong) symbol, needs pifont package
+\newcommand{\xmark}{\ding{56}}
+
+% OK symbol (check), needs pifont package
+\newcommand{\ok}{\ding{52}}
+
+% ORCID
+\newcommand{\orcid}[1]{\href{#1}{\includegraphics[scale=0.035]{figures/orcid.png}}}
+
+
+
+
+% Custom environments
+% =====================
+
 % Environment for pretty box with title. Colors inspired
 % on default style used in http://www.lasca.ic.unicamp.br/pub/ctan/macros/latex/contrib/tcolorbox/tcolorbox.pdf
 % Usage: 
@@ -85,23 +113,11 @@
   \endgroup
 }
 
-% figshare
-\newcommand{\figshare}{fig\textbf{share}}
-
-% cross (wrong) symbol, needs pifont package
-\newcommand{\xmark}{\ding{56}}
-
-% OK symbol (check), needs pifont package
-\newcommand{\ok}{\ding{52}}
-
 % Useful for citations with e.g.
 \newcommand{\eg}[1]{(e.g. \citealt{#1})}
 
 % fonts for code sample: \code{text sample}
 \def\code#1{\texttt{#1}}
-
-% red underline
-\def\redul#1{{\color{red} \underline{\color{black}#1}}}
 
 % new todo environment: todoi = todo-inline
 \def\todoi#1{\hl{\textbf{[#1]}}}
@@ -109,5 +125,14 @@
 % for replies to comments
 \def\reply#1{{\sethlcolor{cyan}\hl{\textbf{[#1]}}}}
 
+% [comments in boldface]
+\def\say#1{\textbf{[#1]}}
+
 % red strikethrough
 \def\rst#1{{\color{red} \st{#1}}}
+
+% underline 
+%\newcommand{\ul}{\underline{\hspace{.05in}}} 
+
+% red underline
+\def\redul#1{{\color{red} \underline{\color{black}#1}}}
